@@ -40,9 +40,10 @@ function init(){
         house = gltf.scene.children[0];
         renderer.render(scene, camera);
         animate();
+        controls = new THREE.OrbitControls(camera, renderer.domElement);
     });
 
-    controls = new THREE.OrbitControls(camera, renderer.domElement);
+    
 }
 
 function animate(){
